@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(243, 34, 104);
+  background-image: url("https://images.pexels.com/photos/4321468/pexels-photo-4321468.jpeg?cs=srgb&dl=pexels-jess-vide-4321468.jpg&fm=jpg");
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h6 {
+  margin: 0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.temperature {
+  color: #20efea;
+  font-size: 100px;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -60px;
+  color: #288775;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.weather {
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 600px;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  list-style: none;
+  color: rgb(243, 34, 104);
+}
+
+.weather-icon {
+  height: 130px;
+  width: 130px;
+}
+
+p {
+  text-align: left;
+  font-size: 14px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 55px;
+  width: 55px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-forecast div {
+  font-size: small;
+}
+.weather-forecast h3 {
+  text-align: center;
+  font-size: small;
+  line-height: 15px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: #eb6e4c;
+  text-decoration: none;
 }
