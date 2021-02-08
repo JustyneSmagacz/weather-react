@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import Weather from "./Weather.js";
 
+import "./App.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div className="App">
+      <Weather />
+    </div>
+  );
+}
 
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
