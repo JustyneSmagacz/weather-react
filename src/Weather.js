@@ -39,7 +39,7 @@ export default function Weather(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(showTemperature);
   }
-  
+
 if (weatherData.ready) {
   return (
     <div className="Weather">
