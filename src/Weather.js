@@ -3,7 +3,8 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate.js"
 import FormattedTime from "./FormattedTime.js"
-
+import WeatherDetails from "./WeatherDetails.js"
+import WeatherForecast from "./WeatherForecast.js"
 
 
 export default function Weather(props) {
@@ -12,7 +13,7 @@ export default function Weather(props) {
 
   function showTemperature(response) {
     setWeatherData({
-    ready:true,
+      ready:true,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -38,8 +39,7 @@ export default function Weather(props) {
 
   function search () {
     const apiKey = "4007b2458c5f1847227a709637cbc50d";
-    let units = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=${units}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showTemperature);
   }
 
@@ -51,10 +51,10 @@ if (weatherData.ready) {
           <div className="col-5">
             <input
               type="search"
-              placeholder="...type to search"
+              placeholder="...type a city"
               autoFocus="on"
               autoComplete="off"
-              class="form-control shadow-sm"
+              className="form-control shadow-sm"
               onChange={handleCityChange}
             />
           </div>
@@ -84,53 +84,14 @@ if (weatherData.ready) {
           </div>
         </div>
       </form>
-      <h1>
-        {weatherData.city}, {weatherData.country}
-      </h1>
-      <h6>{weatherData.description}</h6>
-      <div className="row">
-        <div className="col-4">
-          <div className="clearfix">
-            <img
-              src={weatherData.imgUrl}
-              alt="weather icon"
-              className="weather-icon float-left"
-            />
-          </div>
-        </div>
+    
+    <WeatherDetails data={weatherData}/>
+    <WeatherForecast city={weatherData.city}/>
 
-        <div className="col-4">
-          <div className="float-left temperature">
-            <strong>{weatherData.temperature}</strong>
-            <span className="units">
-              <a href="/">°C</a> | <a href="/">°F</a>
-            </span>
-          </div>
-        </div>
-
-        <div className="col-4">
-          <ul>
-            <li>
-              <strong>Wind: </strong>
-              {weatherData.wind} km/h
-            </li>
-            <li>
-              <strong>Humidity:</strong> {weatherData.humidity}%
-            </li>
-            <li>
-              <strong>Sunrise:</strong> {weatherData.sunrise} am
-            </li>
-            <li>
-              <strong>Sunset:</strong> {weatherData.sunset}pm
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="row weather-forecast"></div>
-    </div>
+      </div>   
   );
 } else {
-search ();
+  search();
    return "Thinking...";
   }
 }

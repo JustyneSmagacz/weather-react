@@ -10,7 +10,9 @@ export default function FormattedTime (props){
     minutes = `0${minutes}`;
     } 
     return (
-    <div>{hours}:{minutes}</div>
+    <div>
+        {hours}:{minutes}
+    </div>
     );
 } 
 }
