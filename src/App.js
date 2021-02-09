@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css';
 import Weather from "./Weather.js";
+import './App.css';
 
 
 export default function App() {
@@ -8,10 +8,8 @@ export default function App() {
   <div className="App"> 
     <div className="Container">
 
-
-      <h1>Weather App</h1>
-      <Weather />
-
+      <Weather defaultCity="Madrid"/>
+      
       <footer>Open Source on <a href="https://github.com/JustyneSmagacz/weather-react" target="_blank">Github</a> | Coded by <a href="https://www.linkedin.com/in/justyne-smagacz-aa6b4a31/" target="_blank">Justyne Smagacz</a></footer>
     </div>
   </div>);
