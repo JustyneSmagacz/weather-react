@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WeatherForecastPreview from "./WeatherPreview";
+import WeatherPreview from "./WeatherPreview";
 import axios from "axios";
 import "./WeatherForecast.css";
 
@@ -12,21 +12,20 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded && props.city === forecast.city.name) {
+  if (loaded) {
     return (
-      <div className="WeatherForecast row">
-        <WeatherForecastPreview data={forecast.list[0]} />
-        <WeatherForecastPreview data={forecast.list[1]} />
-        <WeatherForecastPreview data={forecast.list[2]} />
-        <WeatherForecastPreview data={forecast.list[3]} />
-        <WeatherForecastPreview data={forecast.list[4]} />
-        <WeatherForecastPreview data={forecast.list[5]} />
-      </div>
+       <span className="WeatherPreview">
+                {forecast.data.daily.slice(1, 6).map(function (forecastItem) {
+                    return <ForecastDay data={forecastItem} key={forecastItem.dt}/>
+                })}
+            </span>
     );
   } else {
     let apiKey = "4007b2458c5f1847227a709637cbc50d";
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
-    axios.get(url).then(handleForecastResponse);
+    let units = "metric";
+    let excludeInfo = 'current,minutely,hourly,alerts';
+    let apiForecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.latitude}&lon=${props.longitude}&exclude=${excludeInfo}&appid=${apiKey}&units=${units}`
+    axios.get(apiForecastURL).then(handleForecastResponse);
 
     return null;
   }

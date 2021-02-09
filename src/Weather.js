@@ -22,7 +22,7 @@ export default function Weather(props) {
       sunset: response.data.sys.sunset,
       city: response.data.name,
       country: response.data.sys.country,
-      imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       time: new Date(response.data.id * 1000),
       date: new Date(response.data.dt * 1000),
     });

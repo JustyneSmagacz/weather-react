@@ -15,6 +15,23 @@ h6 {
   margin: 0%;
 }
 
+p {
+  text-align: left;
+  font-size: 14px;
+  color: white;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  font-size: 16px;
+  list-style: none;
+  color: rgb(243, 34, 104);
+}
+
 .temperature {
   color: #20efea;
   font-size: 100px;
@@ -37,26 +54,9 @@ h6 {
   max-width: 600px;
 }
 
-ul {
-  margin: 0 0 10px;
-  padding: 0;
-}
-
-li {
-  font-size: 16px;
-  list-style: none;
-  color: rgb(243, 34, 104);
-}
-
 .weather-icon {
   height: 130px;
   width: 130px;
-}
-
-p {
-  text-align: left;
-  font-size: 14px;
-  color: white;
 }
 
 .weather-forecast img {
