@@ -3,7 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherPreview(props) {
   function day() {
-    let days = ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'];
+    let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     let day = days[props.date.getDay()];
     return `${day}`;
   }
