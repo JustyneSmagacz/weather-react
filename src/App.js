@@ -10,7 +10,7 @@ export default function App() {
 
       <SearchEngine defaultCity="Madrid"/>
       
-      <footer>Open Source on <a href="https://github.com/JustyneSmagacz/weather-react" target="_blank">Github</a> | Coded by <a href="https://www.linkedin.com/in/justyne-smagacz-aa6b4a31/" target="_blank">Justyne Smagacz</a></footer>
+      <footer>Open Source on <a href="https://github.com/JustyneSmagacz/weather-react" target="_blank" rel="noreferrer">Github</a> | Coded by <a href="https://www.linkedin.com/in/justyne-smagacz-aa6b4a31/" target="_blank" rel="noreferrer">Justyne Smagacz</a></footer>
     </div>
   </div>);
 }

@@ -22,7 +22,7 @@ export default function ConvertTemperature(props) {
             <span className="temperature-type">
                 ºC
                 <span> | </span>
-                <a href="/" className="fahrenheit" onClick={handleFahrenheit}>
+                <a href="/" className="fahrenheit" onClick={handleFahrenheit} rel="noreferrer">
                 ºF
                 </a>
             </span>
@@ -36,7 +36,7 @@ export default function ConvertTemperature(props) {
                 {fahrenheit}
             </h1>
             <span className="temperature-type">
-                <a href="/" className="celsius" onClick={handleCelsius}>
+                <a href="/" className="celsius" onClick={handleCelsius} rel="noreferrer">
                 ºC
                 </a>
                 <span> | </span>
