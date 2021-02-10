@@ -1,4 +1,4 @@
-.Weather {
+.SearchEngine {
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.5);
   border: 3px solid white;
@@ -8,24 +8,24 @@
   max-width: 650px;
 }
 
-.Weather .weather-forecast img {
+.SearchEngine .weather-forecast img {
   display: block;
   margin: 0 auto;
   height: 55px;
   width: 55px;
 }
 
-.Weather .weather-forecast div {
+.SearchEngine .weather-forecast div {
   font-size: small;
 }
 
-.Weather .weather-forecast h3 {
+.SearchEngine .weather-forecast h3 {
   text-align: center;
   font-size: small;
   line-height: 15px;
 }
 
-.Weather .weather-forecast-temperature {
+.SearchEngine .weather-forecast-temperature {
   text-align: center;
   font-size: 13px;
   font-weight: 400;
@@ -34,11 +34,11 @@
   white-space: nowrap;
 }
 
-.Weather .weather-icon {
+.SearchEngine .weather-icon {
   height: 130px;
   width: 130px;
 }
 
-.Weather .units {
+.SearchEngine .units {
   font-size: 18px;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WeatherPreview from "./WeatherPreview";
+import WeatherPreview from "./WeatherPreview.js";
 import axios from "axios";
 import "./WeatherForecast.css";
 
@@ -14,9 +14,9 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-       <span className="WeatherPreview">
+       <span className="WeatherForecast">
                 {forecast.data.daily.slice(1, 6).map(function (forecastItem) {
-                    return <ForecastDay data={forecastItem} key={forecastItem.dt}/>
+                    return <WeatherDay data={forecastItem} key={forecastItem.dt}/>
                 })}
             </span>
     );

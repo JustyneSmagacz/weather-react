@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Weather.css";
+import "./SearchEngine.css";
 import FormattedDate from "./FormattedDate.js"
 import FormattedTime from "./FormattedTime.js"
-import WeatherDetails from "./WeatherDetails.js"
+import WeatherDay from "./WeatherDay.js"
 import WeatherForecast from "./WeatherForecast.js"
 
 
 
-export default function Weather(props) {
+export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
-  function showTemperature(response) {
+  function showWeather(response) {
     setWeatherData({
       ready:true,
       temperature: response.data.main.temp,
@@ -41,12 +41,12 @@ export default function Weather(props) {
   function search () {
     const apiKey = "4007b2458c5f1847227a709637cbc50d";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showTemperature);
+    axios.get(apiUrl).then(showWeather);
   }
 
 if (weatherData.ready) {
   return (
-    <div className="Weather">
+    <div className="SearchEngine">
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-5">
@@ -86,7 +86,7 @@ if (weatherData.ready) {
         </div>
       </form>
     
-    <WeatherDetails data={weatherData}/>
+    <WeatherDay data={weatherData}/>
     <WeatherForecast city={weatherData.city}/>
 
       </div>   

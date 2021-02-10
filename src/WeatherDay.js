@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon.js"
 
-export default function WeatherDetails (props){
+export default function WeatherDay (props){
     return (
     <div>
             <h1>
