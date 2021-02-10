@@ -3,10 +3,9 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherPreview(props) {
   function day() {
-    let days =["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"]
+    let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     let day = days[props.date.getDay()];
-    return `{day}`;
-
+    return `${day}`;
   }
 
   function temperature() {
@@ -16,7 +15,7 @@ export default function WeatherPreview(props) {
 
   return (
     <div className="WeatherPreview col">
-      {days()}
+      {day()}
       <WeatherIcon code={props.data.weather[0].icon} />
       {temperature()}
     </div>

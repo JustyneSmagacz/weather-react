@@ -3,7 +3,7 @@ import WeatherIcon from "./WeatherIcon.js"
 import ConvertTemperature from "./ConvertTemperature";
 
 
-export default function WeatherDay (props){
+export default function WeatherDay(props){
     return (
     <div>
             <h1>
