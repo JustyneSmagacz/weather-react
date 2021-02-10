@@ -1,5 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon.js"
+import ConvertTemperature from "./ConvertTemperature";
+
 
 export default function WeatherDay (props){
     return (
@@ -20,18 +22,14 @@ export default function WeatherDay (props){
 
                 <div className="col-4">
                 <div className="float-left temperature">
-                    <strong>{props.data.temperature}</strong>
-                    <span className="units">
-                    <a href="/">°C</a> | <a href="/">°F</a>
-                    </span>
+                   <ConvertTemperature temp={props.data.temp} />
                 </div>
                 </div>
 
                 <div className="col-4">
                 <ul>
                     <li>
-                    <strong>Wind: </strong>
-                    {props.data.wind} km/h
+                    <strong>Wind: </strong>{props.data.wind} km/h
                     </li>
                     <li>
                     <strong>Humidity:</strong> {props.data.humidity}%
