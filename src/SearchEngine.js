@@ -15,7 +15,7 @@ export default function SearchEngine(props) {
   function showWeather(response) {
     setWeatherData({
       ready:true,
-      temperature: response.data.main.temp,
+      temp: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,

@@ -38,50 +38,8 @@ li {
   line-height: 1;
 }
 
-.units {
-  position: relative;
-  top: -60px;
-  color: #288775;
-}
-
 .search-form {
   margin-bottom: 20px;
-}
-
-.weather {
-  margin: 10px auto;
-  padding: 15px;
-  max-width: 600px;
-}
-
-.weather-icon {
-  height: 130px;
-  width: 130px;
-}
-
-.weather-forecast img {
-  display: block;
-  margin: 0 auto;
-  height: 55px;
-  width: 55px;
-}
-
-.weather-forecast div {
-  font-size: small;
-}
-.weather-forecast h3 {
-  text-align: center;
-  font-size: small;
-  line-height: 15px;
-}
-
-.weather-forecast-temperature {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 400;
-  height: auto;
-  line-height: 15px;
-  white-space: nowrap;
 }
 
 .link {
