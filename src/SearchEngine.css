@@ -15,14 +15,15 @@
   width: 80px;
 }
 
-.forecast-icon {
-  height: 130px;
-  width: 130px;
+#main-temperature {
+  font-size: 70px;
+  position: relative;
+  right: 70px;
 }
-
 .temperature-type {
   font-size: 18px;
   position: relative;
-  top: -60px;
-  color: #288775;
+  top: -80px;
+  left: 10px;
+  color: purple;
 }

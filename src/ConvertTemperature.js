@@ -16,9 +16,9 @@ export default function ConvertTemperature(props) {
     if(units === "celsius"){
     return(
         <span className="ConvertTemperature">
-            <h1 id="main-temperature" className="celsius">
+            <h2 id="main-temperature" className="celsius">
                 {Math.round(props.temp)}
-            </h1>
+            </h2>
             <span className="temperature-type">
                 ºC
                 <span> | </span>

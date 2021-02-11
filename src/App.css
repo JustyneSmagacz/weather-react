@@ -4,10 +4,15 @@ body {
 }
 
 h1 {
-  font-size: 26px;
   line-height: 28px;
   margin: 0;
   color: cyan;
+}
+
+h2 {
+  line-height: 28px;
+  margin: 0;
+  color: purple;
 }
 
 h6 {
@@ -27,7 +32,7 @@ ul {
 }
 
 li {
-  font-size: 16px;
+  font-size: 14px;
   list-style: none;
   color: hotpink;
 }
