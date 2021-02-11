@@ -1,16 +1,16 @@
-import react from "react";
+import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherPreview(props) {
-function getDay() {
+  function getDay() {
     let unixTimestamp = props.data.dt;
     let timezoneOffset = props.timezone;
     let localUnixTimestamp = unixTimestamp + timezoneOffset;
     let date = new Date(localUnixTimestamp * 1000);
     let days = ["Fun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-    let day = days[date.getDate()];
+    let day = days[date.getDay()];
     return `${day}`;
-}
+  }
 
 function temperature() {
     let temperature = Math.round(props.data.temp.day);
