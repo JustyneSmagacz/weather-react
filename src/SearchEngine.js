@@ -47,7 +47,7 @@ export default function SearchEngine(props) {
       <div className="SearchEngine">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-5">
+            <div className="col-6">
               <input
                 type="search"
                 placeholder="...type a city"
@@ -57,17 +57,10 @@ export default function SearchEngine(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-2">
+            <div className="col-3">
               <input
                 type="submit"
-                value="🔍"
-                className="form-control btn btn-outline-info shadow-sm"
-              />
-            </div>
-            <div className="col-2">
-              <input
-                type="submit"
-                value="📍"
+                value="Search"
                 className="form-control btn btn-outline-info shadow-sm"
               />
             </div>

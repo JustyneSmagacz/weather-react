@@ -8,38 +8,19 @@
   max-width: 650px;
 }
 
-.SearchEngine .weather-forecast img {
+#forecast-icon {
   display: block;
   margin: 0 auto;
-  height: 55px;
-  width: 55px;
+  height: 80px;
+  width: 80px;
 }
 
-.SearchEngine .weather-forecast div {
-  font-size: small;
-}
-
-.SearchEngine .weather-forecast h3 {
-  text-align: center;
-  font-size: small;
-  line-height: 15px;
-}
-
-.SearchEngine .weather-forecast-temperature {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 400;
-  height: auto;
-  line-height: 15px;
-  white-space: nowrap;
-}
-
-.SearchEngine .weather-icon {
+.forecast-icon {
   height: 130px;
   width: 130px;
 }
 
-.SearchEngine .units {
+.temperature-type {
   font-size: 18px;
   position: relative;
   top: -60px;
