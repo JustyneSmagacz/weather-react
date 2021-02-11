@@ -1,3 +1,10 @@
+.App {
+  max-width: 600px;
+  padding: 5px;
+  margin: 5%;
+  max-width: 650px;
+}
+
 body {
   background-image: url("https://images.pexels.com/photos/4321468/pexels-photo-4321468.jpeg?cs=srgb&dl=pexels-jess-vide-4321468.jpg&fm=jpg");
   background-size: 100%;
@@ -28,6 +35,9 @@ p {
 footer {
   font-size: 20px;
   color: orange;
+  line-height: 0px;
+  position: relative;
+  left: 35px;
 }
 
 ul {

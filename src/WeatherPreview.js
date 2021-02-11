@@ -2,13 +2,12 @@ import react from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherPreview(props) {
-    console.log(props);
 function getDay() {
     let unixTimestamp = props.data.dt;
-    let timezoneoOffset = props.timezone;
-    let localUnixTimestamp = unixTimestamp + timezoneoOffset;
+    let timezoneOffset = props.timezone;
+    let localUnixTimestamp = unixTimestamp + timezoneOffset;
     let date = new Date(localUnixTimestamp * 1000);
-    let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    let days = ["Fun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     let day = days[date.getDate()];
     return `${day}`;
 }
