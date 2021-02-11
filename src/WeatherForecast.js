@@ -18,7 +18,7 @@ export default function WeatherForecast(props) {
     ) {
     return (
        <span className="WeatherForecast row">
-                {forecast.daily.slice(1, 6).map(function (forecastItem) {
+                {forecast.daily.slice(1, 5).map(function (forecastItem) {
                     return (
                     <WeatherPreview 
                     data={forecastItem} 
