@@ -1,4 +1,5 @@
 import react from "react";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherPreview(props) {
     console.log(props);
