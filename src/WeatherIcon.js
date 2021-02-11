@@ -2,24 +2,24 @@ import React from "react";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-        "01d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/sunny_light_color_32dp.png',
-        "01n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/clear_night_light_color_32dp.png',
-        "02d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_32dp.png',
-        "02n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_night_light_color_32dp.png',
+        "01d": 'https://ssl.gstatic.com/onebox/weather/48/sunny.png',
+        "01n": 'https://ssl.gstatic.com/onebox/weather/48/sunny.png',
+        "02d": 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+        "02n": 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
         "03d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/mostly_cloudy_day_light_color_32dp.png',
         "03n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/mostly_cloudy_night_light_color_32dp.png',
-        "04d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_32dp.png',
-        "04n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_32dp.png',
-        "09d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/showers_rain_light_color_32dp.png',
-        "09n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/showers_rain_light_color_32dp.png',
-        "10d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/heavy_rain_light_color_32dp.png',
-        "10n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/heavy_rain_light_color_32dp.png',
-        "11d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/strong_tstorms_light_color_32dp.png',
-        "11n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/strong_tstorms_light_color_32dp.png',
-        "13d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/snow_showers_snow_light_color_32dp.png',
-        "13n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/snow_showers_snow_light_color_32dp.png',
-        "50d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/haze_fog_dust_smoke_light_color_32dp.png',
-        "50n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/haze_fog_dust_smoke_light_color_32dp.png'
+        "04d": 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+        "04n": 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+        "09d": 'https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png',
+        "09n": 'https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png',
+        "10d": 'https://ssl.gstatic.com/onebox/weather/48/rain_light.png',
+        "10n": 'https://ssl.gstatic.com/onebox/weather/48/rain_light.png',
+        "11d": 'https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png',
+        "11n": 'https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png',
+        "13d": 'https://ssl.gstatic.com/onebox/weather/48/snow.png',
+        "13n": 'https://ssl.gstatic.com/onebox/weather/48/snow.png',
+        "50d": 'https://ssl.gstatic.com/onebox/weather/48/fog.png',
+        "50n": 'https://ssl.gstatic.com/onebox/weather/48/fog.png'
   };
     let forecastIcon = codeMapping[props.code];
   
