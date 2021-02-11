@@ -7,7 +7,7 @@ export default function WeatherPreview(props) {
     let timezoneOffset = props.timezone;
     let localUnixTimestamp = unixTimestamp + timezoneOffset;
     let date = new Date(localUnixTimestamp * 1000);
-    let days = ["Fun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    let days = ["Fun.", "Mon.", "Tues.", "Wed.", "Thurs.", "Fri.", "Sat."];
     let day = days[date.getDay()];
     return `${day}`;
   }
