@@ -21,19 +21,10 @@ export default function WeatherIcon(props) {
         "50d": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/haze_fog_dust_smoke_light_color_32dp.png',
         "50n": 'http://www.gstatic.com/images/icons/material/apps/weather/2x/haze_fog_dust_smoke_light_color_32dp.png'
   };
-
-  let daysArray = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    let date = new Date(props.data.dt*1000);
-    let forecastId = props.data.weather[0].icon;
-    let forecastIcon = codeMapping[forecastId];
-    let weekDay = daysArray[date.getDay()];
-    
+    let forecastIcon = codeMapping[props.code];
+  
     return(
-        <div className="ForecastDay col text-center">
-            <p className="day-name">{weekDay}</p>
             <img src={forecastIcon} id="forecast-icon" alt="Forecast icon"/>
-            <p id="week-temperature"><strong><span className="celsius" id="max-temp">{Math.round(props.data.temp.max)}</span>º</strong>  <span className="celsius" id="min-temp">{Math.round(props.data.temp.min)}</span>º</p>      
-        </div>
     );
     
 }
