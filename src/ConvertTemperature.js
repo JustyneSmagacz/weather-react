@@ -17,7 +17,7 @@ export default function ConvertTemperature(props) {
     return(
         <span className="ConvertTemperature">
             <h1 id="main-temperature" className="celsius">
-                {props.temp}
+                {Math.round(props.temp)}
             </h1>
             <span className="temperature-type">
                 ºC
