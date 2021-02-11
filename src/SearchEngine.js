@@ -14,6 +14,7 @@ export default function SearchEngine(props) {
     let unixTimestamp = response.data.dt;
     let timezoneOffset = response.data.timezone;
     let localUnixTimestamp = unixTimestamp + timezoneOffset;
+
     setWeatherData({
       ready: true,
       temp: response.data.main.temp,
