@@ -10,8 +10,8 @@
 #forecast-icon {
   display: block;
   margin: 0 auto;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 
 #main-temperature.celsius,
