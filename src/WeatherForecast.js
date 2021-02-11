@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WeatherDay from "./WeatherDay";
+import WeatherPreview from "./WeatherPreview";
 import axios from "axios";
 import "./WeatherForecast.css";
 
@@ -12,11 +12,20 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
+  if (loaded &&
+    props.latitude === forecast.lat &&
+    props.longitude === forecast.lon    
+    ) {
     return (
-       <span className="WeatherForecast">
-                {forecast.data.daily.slice(1, 6).map(function (forecastItem) {
-                    return <WeatherDay data={forecastItem} key={forecastItem.dt}/>
+       <span className="WeatherForecast row">
+                {forecast.daily.slice(1, 6).map(function (forecastItem) {
+                    return (
+                    <WeatherPreview 
+                    data={forecastItem} 
+                    timezone={forecast.timezone_offset}
+                    key={forecastItem.dt}
+                    />
+                    );
                 })}
             </span>
     );
