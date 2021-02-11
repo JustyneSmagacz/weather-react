@@ -15,15 +15,17 @@
   width: 80px;
 }
 
-#main-temperature {
+#main-temperature.celsius,
+#main-temperature.fahrenheit {
   font-size: 70px;
   position: relative;
   right: 70px;
+  color: yellow;
 }
 .temperature-type {
   font-size: 18px;
   position: relative;
   top: -80px;
   left: 10px;
-  color: purple;
+  color: yellow;
 }
