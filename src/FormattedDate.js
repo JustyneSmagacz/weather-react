@@ -6,9 +6,11 @@ export default function FormattedDate (props){
     let date = props.date.getDate();
     let day = days[props.date.getDay()];
     let month = months[props.date.getMonth()];
+
     return (
     <div>
         {day},{date} {month} 
+        <br />
     </div>
     );
 }

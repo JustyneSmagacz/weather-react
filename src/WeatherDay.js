@@ -15,19 +15,19 @@ export default function WeatherDay(props){
                 <div className="col-4">
                 <div className="clearfix">
                     <div className="float-left">
-                    <WeatherIcon code={props.data.icon} />
+                    <WeatherIcon code={props.data.icon} size={150} />
                     </div>
                   
                 </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-3">
                 <div className="float-left temperature">
                    <ConvertTemperature temp={props.data.temp} />
                 </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-5">
                 <ul>
                     <li>
                     <strong>Wind: </strong>{props.data.wind} km/h
@@ -36,7 +36,7 @@ export default function WeatherDay(props){
                     <strong>Humidity:</strong> {props.data.humidity}%
                     </li>
                     <li>
-                    <strong>Sunrise:</strong> <FormattedTime time={props.data.sunrise} /> am
+                    <strong>Sunrise:</strong> <FormattedTime time={props.data.sunrise}/> am
                     </li>
                     <li>
                     <strong>Sunset:</strong> <FormattedTime time={props.data.sunset} /> pm

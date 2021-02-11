@@ -71,7 +71,7 @@ export default function SearchEngine(props) {
                   <FormattedDate date={weatherData.date} />
                 </li>
                 <li>
-                  <FormattedTime date={weatherData.date} />
+                  <FormattedTime date={weatherData.date}/>
                 </li>
               </ul>
             </div>
