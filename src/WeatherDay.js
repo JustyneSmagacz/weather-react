@@ -1,8 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import ConvertTemperature from "./ConvertTemperature";
-import SunTime from "./SunTime";
-
+import SunTime from "./SunTime.js";
 
 export default function WeatherDay(props){
     return (
