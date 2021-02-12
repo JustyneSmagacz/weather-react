@@ -35,10 +35,10 @@ export default function WeatherDay(props){
                     <strong>Humidity:</strong> {props.data.humidity}%
                     </li>
                     <li>
-                    <strong>Sunrise:</strong> <SunTime time={props.data.sunrise}/> am
+                    <SunTime time={props.data.sunrise}/>
                     </li>
                     <li>
-                    <div><strong>Sunset:</strong> <SunTime time={props.data.sunset}/> pm</div>
+                    <SunTime time={props.data.sunset}/>
                     </li>
                 </ul>
                 </div>

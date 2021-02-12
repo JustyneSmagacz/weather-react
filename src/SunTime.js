@@ -9,14 +9,20 @@ export default function SunTime(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
-  return (
+  
+ return (
     <div className="sunTime">
-      {hours}:{minutes}
-    </div>
-  );
-}
+      <strong>Sunrise:</strong> {hours}:{minutes} am
+    </div>);
+ }
+
+//} else {
+   // return (
+    //<div className="sunTime">
+     // <strong>SunSet:</strong> {hours}:{minutes} pm
+    //</div>
+    //  );
+//}
