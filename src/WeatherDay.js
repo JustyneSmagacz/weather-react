@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import ConvertTemperature from "./ConvertTemperature";
-import FormattedTime from "./FormattedTime";
+import SunTime from "./SunTime";
 
 
 export default function WeatherDay(props){
@@ -36,10 +36,10 @@ export default function WeatherDay(props){
                     <strong>Humidity:</strong> {props.data.humidity}%
                     </li>
                     <li>
-                    <strong>Sunrise:</strong>{props.data.sunrise} am
+                    <strong>Sunrise:</strong> <SunTime time={props.data.sunrise}/> am
                     </li>
                     <li>
-                    <strong>Sunset:</strong> {props.data.sunset} pm
+                    <strong>Sunset:</strong> <SunTime time={props.data.sunset}/> pm
                     </li>
                 </ul>
                 </div>
