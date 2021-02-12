@@ -12,7 +12,7 @@ export default function SearchEngine(props) {
 
   function showWeather(response) {
     let unixTimestamp = response.data.dt;
-    let timezoneOffset = response.data.timezone;
+    let timezoneOffset = (response.data.timezone);
     let localUnixTimestamp = unixTimestamp + timezoneOffset;
 
     setWeatherData({

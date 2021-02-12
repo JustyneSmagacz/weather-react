@@ -17,14 +17,17 @@ h1 {
 }
 
 h2 {
-  line-height: 28px;
+  line-height: 28px 10px;
   margin: 0;
+  position: relative;
+  bottom: -20px;
 }
 
 h6 {
   margin: 0%;
   color: #14a3b8;
   text-transform: capitalize;
+  line-height: 10px;
 }
 
 p {
@@ -60,8 +63,4 @@ li {
 .link:hover {
   color: #eb6e4c;
   text-decoration: none;
-}
-
-.Table {
-  display: block;
 }
