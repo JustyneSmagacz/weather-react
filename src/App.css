@@ -61,3 +61,7 @@ li {
   color: #eb6e4c;
   text-decoration: none;
 }
+
+.Table {
+  display: block;
+}

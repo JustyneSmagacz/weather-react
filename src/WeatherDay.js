@@ -38,7 +38,7 @@ export default function WeatherDay(props){
                     <strong>Sunrise:</strong> <SunTime time={props.data.sunrise}/> am
                     </li>
                     <li>
-                    <strong>Sunset:</strong> <SunTime time={props.data.sunset}/> pm
+                    <div><strong>Sunset:</strong> <SunTime time={props.data.sunset}/> pm</div>
                     </li>
                 </ul>
                 </div>
