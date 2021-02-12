@@ -19,6 +19,7 @@ h2 {
   margin: 0;
   position: relative;
   bottom: -20px;
+  float: left;
 }
 
 h6 {
